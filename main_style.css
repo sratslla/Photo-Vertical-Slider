@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('https://cdna.artstation.com/p/assets/images/images/025/590/764/large/mariusz-krzywicki-haunted-forest-a.jpg?1586282510');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center ;
+    height:100%;
+    width: 100%;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-text{
+    font-size: 150px;
+    color: rgb(107, 102, 102);
+    text-shadow: 0 0 10px black, 0 0 10px black;
+}
+.main-text:hover{
+    color: rgb(255, 0, 0);
+}
+.blood-group{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+section span .bloodimage{
+    position: absolute;
+    display: block;
+    top: -50px;
+    pointer-events: none;
+    background: transparent;
+    animation: animate 4s linear infinite
+}
+@keyframes animate{
+    0%{
+        top: -10%;
+        opacity: 1;
+    }
+    99%{
+        opacity: 1;
+    }
+    100%{
+        top: 110%;
+        opacity: 0;
+    }
+
+}
